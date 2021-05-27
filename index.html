@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NOTES_APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body style="background-color: aqua">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MagicNotes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://127.0.0.1:5500/project1/Notes_taking_website.html#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" id="searchTxt">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Welcome To Magic Notes</h1>
+        <div class="mx-3 my-2 card" style="width: 700px;background-color: rgba(8, 150, 231, 0.281);border-radius: 20px;border-width: 3px"  >
+            <div class="card-body">
+                <h4 class="card-title">Add a note</h4>
+                <p class="card-text">Write here your note's content.</p>
+                <div class="form-group">
+                    <textarea class="form-control" id="Txt" rows="3"></textarea>
+                </div>
+                <button class="card-link" id="btn"
+                    style="background-color: rgb(117, 75, 75);color:white;box-shadow:4px 4px rgb(172, 155, 155);padding:5px;margin:6px;border-radius: 5px;width:120px">Add
+                    note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="indexx.js"></script>
+
+</body>
+
+</html>
