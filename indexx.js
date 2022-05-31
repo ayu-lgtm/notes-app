@@ -63,7 +63,7 @@ function deleteNote(index) {
 
 let search = document.getElementById('searchTxt');
 search.addEventListener('input', function (e) {
-    let inputVal = search.value.toLowerCase();
+    let inputVal = search.value;
     console.log('input event fired', inputVal);
     let noteCard = document.getElementsByClassName('card');
     Array.from(noteCard).forEach(function (element) {
